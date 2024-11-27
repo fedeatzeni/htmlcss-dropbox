@@ -152,7 +152,8 @@ section{
 }
 
 .stretch{
-    align-items: stretch;
+    height: 100%;
+    align-content: stretch;
 }
 
 .plan{
@@ -192,7 +193,14 @@ section{
 }
 
 .part-2{
+    display: inline-block;
+    margin-top: 20px;
     padding: 0 10px;
+}
+
+.light{
+    color: #919fc0;
+    margin-bottom: 40px;
 }
 
 .blue{
