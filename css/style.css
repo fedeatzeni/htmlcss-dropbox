@@ -24,6 +24,9 @@ body{
     margin: 0 auto;
 }
 
+a {
+    color: #0061fe;
+}
 
 /* debug */
 .bg-magenta{
@@ -84,7 +87,8 @@ main{
 /* jumbo  */
 .jumbo{
     background-color: #b4d0e6;
-    padding: 100px 0;
+    padding: 100px 0 0 0;
+    position: relative;
     /* debug */
     /* min-height: 300px; */
 }
@@ -95,12 +99,6 @@ main{
 
 .jumbo a{
     text-decoration: none;
-}
-
-.box{
-    /* debug */
-    height: 200px;
-    background-color: orange;
 }
 
 .title{
@@ -138,6 +136,7 @@ main{
 /* section  */
 
 .section-title{
+    display: inline-block;
     margin: 20px 0;
 }
 
@@ -146,6 +145,7 @@ main{
 }
 
 .section-title h2{
+    margin-top: 80px;
     font-size: 40px;
 }
 
@@ -181,10 +181,6 @@ main{
     list-style: none;
 }
 
-.info a{
-    color: #0061fe;
-}
-
 .info .button{
     display: inline-block;
     margin: 20px 0;
@@ -201,13 +197,6 @@ main{
     margin-top: 20px;
     padding: 0 10px;
     flex-basis: 30%;
-}
-
-.part-2 .button{
-    position: absolute;
-    right: 20px;
-    top: 30px;
-
 }
 
 /* partner section  */
@@ -229,7 +218,6 @@ main{
 }
 
 .business a{
-    color: #0061fe;
     display: inline-block;
     margin-top: 30px;
 }
