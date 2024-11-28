@@ -45,6 +45,7 @@ header{
     height: 80px;
     display: flex;
     align-items: center;
+    z-index: 900;
     /* debug */
 }
 
@@ -71,7 +72,8 @@ nav{
 }
 
 .nav-item:hover{
-    border-bottom: 1px solid #3e87fb;
+    border-bottom: 2px solid #3e87fb;
+    padding: 28px 0;
 }
 
 /* main  */
@@ -105,14 +107,14 @@ main{
     font-size: 40px;
     margin-bottom: 40px;
     /* debug */
-    /* min-height: 100px; */
+    min-height: 100px;
 }
 
 .txt{
     flex-basis: 30%;
     font-weight: 500;
     /* debug */
-    /* min-height: 100px; */
+    min-height: 100px;
 }
 
 .txt div{
@@ -127,6 +129,10 @@ main{
     flex-basis: 70%;
     /* debug */
     /* min-height: 100px; */
+}
+
+.img img{
+    max-width: 100%;
 }
 
 /* section  */
@@ -153,7 +159,7 @@ section{
 
 .stretch{
     height: 100%;
-    align-content: stretch;
+    align-items: stretch;
 }
 
 .plan{
@@ -172,6 +178,7 @@ section{
 
 .info *{
     margin-bottom: 10px;
+    position: relative;
 }
 
 .info ul{
@@ -190,11 +197,28 @@ section{
 .part-1{
     padding: 0 10px;
     margin-bottom: 30px;
+    flex-basis: 70%;
 }
 
 .part-2{
     display: inline-block;
     margin-top: 20px;
+    padding: 0 10px;
+    flex-basis: 30%;
+}
+
+.part-2 .button{
+    position: absolute;
+    right: 20px;
+    top: 30px;
+
+}
+
+.partner{
+    margin: 100px 0;
+}
+
+.partner .txt{
     padding: 0 10px;
 }
 
@@ -215,7 +239,7 @@ section{
 
 .border-bottom{
     border-bottom: 2px solid #eaeaeb;
-    padding: 5px;
+    padding: 20px;
 }
 
 
@@ -225,6 +249,14 @@ section{
     background-color: #0061fe;
     padding: 8px 16px;
     color: white;
+}
+
+.button-gray{
+    text-decoration: none;
+    background-color: white;
+    padding: 8px 16px;
+    color: gray;
+    border: 1px solid gray;
 }
 
 .button:hover{
