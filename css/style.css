@@ -229,6 +229,7 @@ main{
 }
 
 .business a{
+    color: #0061fe;
     display: inline-block;
     margin-top: 30px;
 }
@@ -282,22 +283,43 @@ main{
 
 /* footer */
 footer{
-    /* debug */
-    height: 300px;
     background-color: black;
+    color: white;
+    padding-top: 50px;
+    /* debug */
+    /* height: 300px; */
     
 }
 
+footer ul{
+    list-style: none;
+}
+
 .block{
-    margin-top: 20px;
+    margin: 20px 0 40px 0;
     flex-basis: 20%;
     /* debug */
     min-height: 100px;
 }
 
+.block h2{
+    margin-bottom: 20px;
+}
+
+.block li{
+    margin-bottom: 10px;
+}
+
 .main-footer{
     margin-top: 20px;
     /* debug */
-    min-height: 100px;
-
+    /* min-height: 100px; */
 }
+
+.main-footer> span{
+    display: inline-block;
+    padding: 0 5px;
+    border-top: 1px solid white;
+    padding: 30px 0;
+}
+
